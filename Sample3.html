@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background: url('images/hungergames.gif') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+        }
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            animation: fadeInDown 1.5s;
+        }
+        p {
+            font-size: 1.2em;
+            animation: fadeInUp 1.5s;
+        }
+        .cta-button {
+            background: limegreen;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background: white;
+            color: black;
+            transform: scale(1.1);
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        #features {
+            background: #f8f9fa;
+        }
+        .parallax-section {
+            height: 400px;
+            background: url('images/tallbuilding.gif') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        #about {
+            background: #eef1f6;
+        }
+        #contact {
+            background: #dce5ed;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Experience the Future of Web Design</h1>
+            <p>We craft immersive digital experiences with cutting-edge technology.</p>
+            <a href="index.html" class="cta-button">Discover More</a>
+        </div>
+    </div>
+    
+    <section id="features">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Next-Gen Animations</h3>
+                <p>Interactive elements to enhance engagement.</p>
+            </div>
+            <div class="feature-box">
+                <h3>AI-Driven UX</h3>
+                <p>Intelligent design solutions for your business.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Ultra Fast Performance</h3>
+                <p>Optimized for speed and efficiency.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="parallax-section">
+        Elevate Your Brand with Us
+    </div>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We specialize in high-end web solutions tailored for businesses aiming to stand out in the digital world.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: nyashadesire07@gmail.com | Phone: +263774571833</p>
+        <p>Bulawayo, Zimbabwe</p>
+    </section>
+</body>
+</html>
